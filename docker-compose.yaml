@@ -3,12 +3,7 @@ services:
   backend:
     build: .
     restart: always
+    ports:
+      - "3000:3000"
     env_file:
       - .env
-    networks:
-      - nginx_network
-
-networks:
-  nginx_network:
-    external: true
-    name: nginx
