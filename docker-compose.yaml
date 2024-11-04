@@ -1,0 +1,14 @@
+version: "3"
+services:
+  backend:
+    build: .
+    restart: always
+    env_file:
+      - .env
+    networks:
+      - nginx_network
+
+networks:
+  nginx_network:
+    external: true
+    name: nginx
