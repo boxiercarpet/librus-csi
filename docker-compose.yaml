@@ -1,6 +1,7 @@
 version: "3"
 services:
   backend:
+    container_name: librus-csi
     build: .
     restart: always
     ports:
