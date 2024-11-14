@@ -9,4 +9,4 @@ services:
     env_file:
       - .env
     environment:
-      TZ: "Europen/Warsaw"
+      TZ: "Europe/Warsaw"
