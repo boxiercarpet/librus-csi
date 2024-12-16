@@ -10,3 +10,7 @@ services:
       - .env
     environment:
       TZ: "Europe/Warsaw"
+    networks:
+      default:
+        aliases:
+          - libruscsi
